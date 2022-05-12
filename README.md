@@ -43,4 +43,42 @@ CREATE DATABASE mydatabase;
 ```  
 un petit message apparaît pour verifier que la base à bien été créer : 
   
-![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/createDatabase.png)
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/createDatabase.png)  
+  
+Pour verifier notre base de données, on peut utiliser la commande **SHOW**  
+```
+SHOW DATABASES;
+```  
+Enfin pour pouvoir agir sur notre base de données(la selectionner), on utilisera la commande :
+```SQL
+USE mydatabase;
+```  
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/useDatabase.png)  
+------
+## Création des tables  
+Pour créer une table, il nous faudra taper la commande suivante en précisant entre parenthèses les champs et les types pour chaque colonnes : 
+```SQL
+CREATE TABLE user (
+    id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nickname VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    adult BOOLEAN DEFAULT false
+);
+```  
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/createTable.png)  
+  
+Pour verifier que la table s'est bien créer, on utilise la commande suivante : 
+```SQL
+SHOW TABLES;
+```
+ Pour verifier que le schéma s'est bien créer, on utilise la commande suivante : 
+```SQL
+SHOW COLUMNS FROM user;
+```
+ 
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/showTable.png)  
+
+  
+
+  
+
