@@ -13,7 +13,8 @@ Une fois le *cmd* ouvert, il va falloir nous placer dans __MySQL__ en suivant le
 set PATH=%PATH%; C:\wamp64\bin\mysql\mysql5.7.36\bin
 ```  
 un autre moyen d'aller directment dans le fichier avec *cmd* et d'ouvrir le fichier est de taper *cmd* dans l'url.  
-![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/cmd.png)  
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/Animation.gif)  
 ------
 ## Ouvrir MySQL dans *cmd*
-Taper la ligne de commande suivante : 'mysql -u root -p'  
+Taper la ligne de commande suivante : 'mysql -u root -p' 
+Si vous n'avez pas de mot de passe , alors tapez entrer lors de la demande mot de passe 
