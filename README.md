@@ -136,7 +136,7 @@ Nous pouvons aussi ordonner nos objets grâce au mot clé **ORDER BY** :
 ```SQL
 SELECT * FROM `user` ORDER BY id DESC;
 ```
-![img Shell](https://github.com/Hakimcdl/mySQL/blob/main/img/selectDesc.PNG) 
+![img Shell](https://github.com/Hakimcdl/mySQL/blob/main/img/selectDesc.png)  
   
 On utilisera la commande **UPDATE SET WHERE** qui permet  
 * d'attribuer une nouvelle valeur à une colonne
