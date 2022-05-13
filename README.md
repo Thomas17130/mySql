@@ -130,13 +130,13 @@ LIKE "%gmail.com";
 ```  
 ![img Shell](https://github.com/Hakimcdl/mySQL/blob/main/img/selectCondition.PNG)    
 Voici comment mettre une contrainte sur une chaine de caractère :  
-![img Shell](https://github.com/Hakimcdl/mySQL/blob/main/img/email.png)    
+![image Shell](https://github.com/Hakimcdl/mySQL/blob/main/img/email.png)    
 
 Nous pouvons aussi ordonner nos objets grâce au mot clé **ORDER BY** :  
 ```SQL
 SELECT * FROM `user` ORDER BY id DESC;
 ```  
-![img Shell](https://github.com/Hakimcdl/mySQL/blob/main/img/selectDesc.png)  
+![image Shell](https://github.com/Hakimcdl/mySQL/blob/main/img/selectDesc.png)  
   
 On utilisera la commande **UPDATE SET WHERE** qui permet  
 * d'attribuer une nouvelle valeur à une colonne
