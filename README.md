@@ -267,6 +267,15 @@ On untilisera la fonction suivante :
 SELECT SUM(city_consumation) FROM car;
 ```  
 ![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/selectSum.png)  
+  
+On peut également rajouter une condition en utilisant **WHERE** : 
+```SQL
+SELECT SUM(price) FROM car WHERE id = 1;
+```  
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/selectSumCondition.png)  
+
+ 
+
 
 
 
