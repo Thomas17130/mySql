@@ -158,3 +158,60 @@ WHERE id = 3;
 ```
 ![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/delete.png)  
 
+---------- 
+
+## Les fonctions SQL d'agrégation  
+
+ 
+
+Les fonctions d’agrégation sont des fonctions idéales pour effectuer quelques statistiques de bases sur des tables. Les principales fonctions sont les suivantes :  
+
+ 
+
+* AVG() pour calculer la moyenne sur un ensemble d’enregistrement
+
+* COUNT() pour compter le nombre d’enregistrement sur une table ou une colonne distincte
+
+* MAX() pour récupérer la valeur maximum d’une colonne sur un ensemble de ligne. Cela s’applique à la fois pour des données numériques ou alphanumérique
+
+* MIN() pour récupérer la valeur minimum de la même manière que MAX()
+
+* SUM() pour calculer la somme sur un ensemble d’enregistrement  
+
+ 
+
+### La fonction AVG()  
+
+ 
+
+La fonction d’agrégation AVG() dans le langage SQL permet de calculer une valeur moyenne sur un ensemble d’enregistrement de type numérique et non nul.  
+
+ 
+
+On utlisera la commande suivante :
+
+```SQL
+
+SELECT AVG(nom_colonne) FROM nom_table
+
+```  
+
+Cela permet de calculer la moyenne d'une colonne dans une table.  
+
+Il est possible de filtrer ce que l'on veut faire grâce à la commande **WHERE**.  
+
+Il est également possible de regrouper les données en utilisant la commande **GROUP BY**.
+
+ 
+
+Voici un exemple d'utilisation :
+
+ 
+
+```SQL
+
+SELECT AVG(`city_consumation`) FROM car;
+
+```
+
+ 
