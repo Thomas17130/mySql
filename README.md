@@ -108,7 +108,7 @@ VALUES  ('Tom', 'tom@gmail.com', true),
 
 ```  
   
-![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/selectInto.png)  
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/insertInto.png)  
 
 On utlisera la commande **SELECT FROM** qui prend en compte  
 * le nom du champ  
