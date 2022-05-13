@@ -212,6 +212,31 @@ Voici un exemple d'utilisation :
 
 SELECT AVG(`city_consumation`) FROM car;
 
-```
+```  
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/selectAVG.png)  
+  
+### La fonction COUNT  
+  
+La fonction permet de compter le nombre d’enregistrement dans une table. Connaître le nombre de lignes dans une table est très pratique dans de nombreux cas, par exemple pour savoir combien d’utilisateurs sont présents dans une table ou pour connaître le nombre de commentaires sur un articles.  
+  
+On utilisera la fonction suivante : 
+
+```SQL
+SELECT COUNT(*) FROM car;
+```  
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/selectCount.png)  
+  
+Utilisation de COUNT(*) avec WHERE
+
+Pour compter le nombre d’utilisateur qui ont effectué au moins un achat, il suffit de faire la même chose mais en filtrant les enregistrements avec WHERE :  
+```SQL
+SELECT COUNT(*) FROM car WHERE city_consumation;
+```  
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/selectCountCondition.png)  
+
+  
+### La fonction 
+
+
 
  
