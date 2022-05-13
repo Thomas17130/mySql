@@ -235,7 +235,40 @@ SELECT COUNT(*) FROM car WHERE city_consumation;
 ![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/selectCountCondition.png)  
 
   
-### La fonction 
+### La fonction Max  
+  
+La fonction MAX() permet de retourner la valeur maximale d’une colonne dans un set d’enregistrement. La fonction peut s’appliquer à des données numériques ou alphanumériques. Il est par exemple possible de rechercher le produit le plus cher dans une table d’une boutique en ligne.  
+  
+On utilisera la fonction suivante :  
+  
+```SQL
+SELECT MAX(`city_consumation`)FROM car;
+```  
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/selectMax.png)  
+
+### La fonction Min  
+
+La fonction MIN() permet de retourner la valeur minimale d’une colonne dans un set d’enregistrement. La fonction peut s’appliquer à des données numériques ou alphanumériques. Il est par exemple possible de rechercher le produit le moins cher dans une table d’une boutique en ligne.  
+  
+On utilisera la fonction suivante :  
+  
+```SQL
+SELECT MIN(`city_consumation`)FROM car;
+```  
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/selectMin.png)  
+
+### La fonction SUM  
+  
+Dans le langage SQL, la fonction SUM() permet de calculer la somme totale d'une collonne contenant des valeurs numériques. Cette fonction ne fonctionne que sur des colonnes de types numériques (INT, FLOAT...) et n'additionne pas les valeurs NULL.  
+  
+On untilisera la fonction suivante :  
+  
+```SQL
+SELECT SUM(city_consumation) FROM car;
+```  
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/selectSum.png)  
+
+
 
 
 
