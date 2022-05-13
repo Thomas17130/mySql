@@ -128,9 +128,10 @@ SELECT `email` FROM `user`
 WHERE `email` 
 LIKE "%gmail.com";
 ```  
-![image Shell](https://github.com/Thomas17130/mySQL/blob/main/img/selectCondition.PNG)    
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/selectCondition.png)  
+
 Voici comment mettre une contrainte sur une chaine de caractère :  
-![image Shell](https://github.com/Thomas17130/mySQL/blob/main/img/email.png)    
+![image Shell](https://github.com/Thomas17130/mySQL/blob/main/img/.contrainte.png)    
 
 Nous pouvons aussi ordonner nos objets grâce au mot clé **ORDER BY** :  
 ```SQL
