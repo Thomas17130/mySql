@@ -78,7 +78,64 @@ SHOW COLUMNS FROM user;
  
 ![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/showTable.png)  
 
-  
+### Les différents types pour creer une table  
+Il existe plusieurs types que l'on peut integrer dans une table :   
+| VARCHAR | INTEGER | BOOLEAN | FLOAT | DATE | TEXT |  
+|---------|---------|---------|-------|------|------|  
+| nb de caractere max | nb entier | true ou false | nb decimal | date | chaine de caracteres sans limites |  
+------  
+## Intéragir avec notre base de données  
+Intéragir avec notre base de données nous permet de réaliser des opérations CRUD, l'acronyme CRUD qui signifie : 
+**CREATE**, **READ**, **UPDATE**, **DELETE**.  
+Toutes les commandes que nous allons voir sont dans la 
+[documentation officielle](https://sql.sh/)
+Commençons par insérer des objets uniques pour alimenter notre BDD;  
+On utilisera la commande **INSERT INTO** qui prend en compte  
+* les paramètres de la table dans laquelle on souhaite insérer l'objet  
+* l'ordre des colonnes (caractéristiques) de l'objet  
+* les valeurs correspondantes à chaque colonnes  
+Voici un exemple pour ajouter un utilisateur dans la BDD :  
+```SQL
+INSERT INTO `user` (`nickname`, `email`, `adult`)
+VALUES ('Tom', 'tom@gmail.com', true);
+```
+Nous allons insérer plusieurs utilisateurs à la fois : 
+```SQL
+INSERT INTO `user` (`nickname`, `email`, `adult`)
+VALUES  ('Tom', 'tom@gmail.com', true),
+        ('Toto', 'toto@gmail.com', true),
+        ('Tata', 'tata@gmail.com', true);
 
+```  
   
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/selectInto.png)  
+
+On utlisera la commande **SELECT FROM** qui prend en compte  
+* le nom du champ  
+* le nom de la table  
+Voici un exemple de selection :  
+```SQL
+SELECT `nickname`
+FROM `user`
+```  
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/selectFrom.png)  
+  
+On utilisera la commande **UPDATE SET WHERE** qui permet  
+* d'attribuer une nouvelle valeur à une colonne
+* En prenant en compte les conditions indiquées par **WHERE**  
+Voici un exemple de selection :  
+```SQL
+UPDATE user
+SET `nickname` = 'Elwenn'
+WHERE id = 2;
+```  
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/update.png)  
+  
+On utilisera la commande **DELETE** qui permet de supprimer des lignes dans une table  
+Voici un exemple de suppression :  
+```SQL
+DELETE FROM `user`
+WHERE id = 3;
+```
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/delete.png)  
 
