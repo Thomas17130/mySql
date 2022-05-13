@@ -118,7 +118,7 @@ Voici un exemple de selection :
 SELECT `nickname`
 FROM `user`
 ```  
-![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/selectFrom.png)  
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/selectFrom.png)    
   
 Voici un exemple où je sélectionne tout les utilisateurs avec une contrainte de l'email finissant par 
 gmail.com
@@ -128,9 +128,9 @@ SELECT `email` FROM `user`
 WHERE `email` 
 LIKE "%gmail.com";
 ```
-![img shell](https://github.com/Hakimcdl/mySQL/blob/main/img/selectCondition.PNG)  
+![img shell](https://github.com/Hakimcdl/mySQL/blob/main/img/selectCondition.PNG)    
 Voici comment mettre une contrainte sur une chaine de caractère :
-![img Shell](https://github.com/Hakimcdl/mySQL/blob/main/img/email.png)  
+![img Shell](https://github.com/Hakimcdl/mySQL/blob/main/img/email.png)    
 
 Nous pouvons aussi ordonner nos objets grâce au mot clé **ORDER BY** :  
 ```SQL
