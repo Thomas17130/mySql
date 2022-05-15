@@ -274,7 +274,25 @@ SELECT SUM(price) FROM car WHERE id = 1;
 ```  
 ![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/selectSumCondition.png)  
 
--------  
+------- 
+## La fonction SQL ALTER TABLE
+
+
+
+On utilisera la commande ALTER TABLE pour lier plusieurs tables entre-elles, en effet cela nous permet d'établir une relation à double sens:  
+```SQL
+ALTER TABLE `car` ADD FOREIGN KEY (`brand_id`) REFERENCES brand(id) ON DELETE CASCADE;
+```
+  
+En effet nous pouvons avoir du Many to One ou One to Many car la relation est bi-drectionnelles.  
+  
+
+PAr exemple notre table **BRAND** incluant le champ *NAME* en l'occurence *BMW* peut avoir plusieurs modèles soit *brand_id* de notre table **CAR** donc une BMW peut être une BMW 325TDS, une BMW 330TDS, ou une BMW M3.    
+  
+Voici comment nous procédons concrètement :
+
+![img shell](https://github.com/Thomas17130/mySQL/blob/main/img/alterTable.PNG)  
+
 ## La fonction SQL INNER JOIN  
   
 La commande **INNER JOIN** est un type de jointure très commune pour lier plusieurs tables entres elles. cette commande retourne les enregistrements lorsqu'il y a au moins une ligne dans chaque colonne qui correspond à la condition.  
