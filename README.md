@@ -261,7 +261,7 @@ SELECT MIN(`city_consumation`)FROM car;
   
 Dans le langage SQL, la fonction SUM() permet de calculer la somme totale d'une collonne contenant des valeurs numériques. Cette fonction ne fonctionne que sur des colonnes de types numériques (INT, FLOAT...) et n'additionne pas les valeurs NULL.  
   
-On untilisera la fonction suivante :  
+On utilisera la fonction suivante :  
   
 ```SQL
 SELECT SUM(city_consumation) FROM car;
@@ -274,7 +274,19 @@ SELECT SUM(price) FROM car WHERE id = 1;
 ```  
 ![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/selectSumCondition.png)  
 
- 
+-------  
+## La fonction SQL INNER JOIN  
+  
+La commande **INNER JOIN** est un type de jointure très commune pour lier plusieurs tables entres elles. cette commande retourne les enregistrements lorsqu'il y a au moins une ligne dans chaque colonne qui correspond à la condition.  
+  
+On utilisera la commande suivante :  
+```SQL
+SELECT * FROM user INNER JOIN car ON user.id = car.id;
+```  
+  
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/innerJoin.png)  
+  
+
 
 
 
