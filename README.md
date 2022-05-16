@@ -291,9 +291,9 @@ PAr exemple notre table **BRAND** incluant le champ *NAME* en l'occurence *BMW* 
   
 Voici comment nous procédons concrètement :
 
-![img shell](https://github.com/Thomas17130/mySQL/blob/main/img/alterTable.PNG)  
+![img Shell](https://github.com/Thomas17130/mySQL/blob/main/img/alterTable.PNG)  
 
-## La fonction SQL INNER JOIN  
+## La requête SQL INNER JOIN  
   
 La commande **INNER JOIN** est un type de jointure très commune pour lier plusieurs tables entres elles. cette commande retourne les enregistrements lorsqu'il y a au moins une ligne dans chaque colonne qui correspond à la condition.  
   
