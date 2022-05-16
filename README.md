@@ -291,7 +291,7 @@ PAr exemple notre table **BRAND** incluant le champ *NAME* en l'occurence *BMW* 
   
 Voici comment nous procédons concrètement :
 
-![image Shell](https://github.com/Thomas17130/mySQL/blob/main/img/alterTable.PNG)  
+![image Shell](https://github.com/Thomas17130/mySql/blob/main/img/alterTable.png)  
 
 ## La requête SQL INNER JOIN  
   
